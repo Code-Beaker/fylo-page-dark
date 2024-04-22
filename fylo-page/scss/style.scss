@@ -59,3 +59,30 @@ body {
     padding: 2rem 3rem;
   }
 }
+
+// features
+.features {
+  padding: 4rem 2rem;
+  color: m.color(neutral-100);
+
+  #{&}__cols {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6rem;
+  }
+
+  #{&}__item-cols {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  #{&}__item {
+    text-align: center;
+  }
+
+  #{&}__item-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+}
