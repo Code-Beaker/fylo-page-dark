@@ -5,17 +5,22 @@
   color: v.color(neutral-100);
   display: block;
   font-size: 0.95rem;
+  outline-offset: 3px;
 
   &:hover {
     text-decoration: underline;
     font-weight: v.weight(bold);
+  }
+
+  &:focus {
+    outline: 3px dotted v.color(cyan-call-500);
   }
 }
 
 .btn-main {
   padding: 0.75rem 3rem;
   font-size: 1.0125rem;
-  color: v.color(neutral-100);
+  //   color: v.color(neutral-100);
   width: 100%;
   border-radius: 4rem;
   font-weight: v.weight(bold);
@@ -25,7 +30,17 @@
     v.color(cyan-call-500),
     v.color(cyan-call-600)
   );
+  outline-offset: 3px;
   display: block;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:focus {
+    outline: 3px dotted v.color(cyan-call-500);
+  }
 }
 
 // link
