@@ -1,0 +1,24 @@
+@use "./variables" as v;
+
+@mixin NavbarMobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 5rem;
+  padding: 1rem;
+}
+
+@mixin NavLinks {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+@mixin NavLink {
+  text-decoration: none;
+  color: v.color(neutral-100);
+
+  &:hover {
+    font-weight: v.weight(bold);
+  }
+}

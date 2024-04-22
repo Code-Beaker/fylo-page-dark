@@ -1,0 +1,31 @@
+$colors: (
+  "dark-blue-intro": hsl(217, 28%, 15%),
+  "dark-blue-main": hsl(218, 28%, 13%),
+  "dark-blue-footer": hsl(216, 53%, 9%),
+  "dark-blue-testimonials": hsl(219, 30%, 18%),
+  "cyan-call-500": hsl(176, 68%, 64%),
+  "cyan-call-600": hsl(198, 60%, 50%),
+  "neutral-100": hsl(0, 0%, 100%),
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+$fonts: (
+  "title": "Raleway",
+  "body": "Open Sans",
+);
+
+@function font($family-name) {
+  @return map-get($fonts, $family-name);
+}
+
+$font-weights: (
+  "regular": 400,
+  "bold": 700,
+);
+
+@function weight($weight-type) {
+  @return map-get($font-weights, $weight-type);
+}

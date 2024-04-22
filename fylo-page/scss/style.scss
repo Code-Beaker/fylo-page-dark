@@ -1,0 +1,23 @@
+@use "./modules/" as m;
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: m.color(dark-blue-main);
+}
+
+.nav {
+  @include m.NavbarMobile;
+
+  #{&}__logo-image {
+    max-width: 5rem;
+  }
+
+  #{&}__links {
+    @include m.NavLinks;
+  }
+
+  //   #{&}__link {
+  //     // @include m.NavLink;
+  //   }
+}

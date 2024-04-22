@@ -1,0 +1,13 @@
+@use "./variables" as v;
+
+.nav__link {
+  text-decoration: none;
+  color: v.color(neutral-100);
+  display: block;
+  font-size: 0.95rem;
+
+  &:hover {
+    text-decoration: underline;
+    font-weight: v.weight(bold);
+  }
+}
