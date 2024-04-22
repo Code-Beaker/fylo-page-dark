@@ -21,3 +21,41 @@ body {
   //     // @include m.NavLink;
   //   }
 }
+
+.hero {
+  padding: 3rem 1rem;
+  background: m.color(dark-blue-intro);
+
+  #{&}__cols {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  #{&}__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #{&}__img {
+    max-width: 15rem;
+  }
+
+  #{&}__text-content {
+    text-align: center;
+    color: m.color(neutral-100);
+  }
+
+  #{&}__heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  #{&}__btn-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+  }
+}
