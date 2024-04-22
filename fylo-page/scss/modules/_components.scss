@@ -27,3 +27,41 @@
   );
   display: block;
 }
+
+// link
+.link {
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: v.color(cyan-call-500);
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    height: 2px;
+    width: 100%;
+    transform-origin: left;
+    background-color: v.color(cyan-call-500);
+    scale: 0 1;
+    transition: 200ms ease-in-out;
+  }
+
+  &:hover::after {
+    scale: 1 1;
+  }
+
+  #{&}__icon {
+    display: block;
+
+    & img {
+      display: block;
+    }
+  }
+}
