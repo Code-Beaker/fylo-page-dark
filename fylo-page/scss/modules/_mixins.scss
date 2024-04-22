@@ -22,3 +22,29 @@
     font-weight: v.weight(bold);
   }
 }
+
+@mixin Profile {
+  color: v.color(neutral-100);
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  margin: 1rem 0;
+  display: flex;
+
+  .profile__image {
+    max-width: 2rem;
+
+    & img {
+      display: block;
+      border-radius: 50%;
+    }
+  }
+
+  .profile__name {
+    font-size: 0.85rem;
+  }
+
+  .profile__job {
+    font-size: 0585rem;
+  }
+}

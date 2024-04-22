@@ -118,3 +118,44 @@ body {
     margin-bottom: 1rem;
   }
 }
+
+// testimonials
+.testimonials {
+  color: m.color(neutral-100);
+  padding: 1rem;
+
+  .testimonial {
+    background-color: m.color(dark-blue-testimonials);
+    padding: 1rem;
+    border-radius: 0.25rem;
+    position: relative;
+
+    &:first-child::before {
+      content: "";
+      left: 0;
+      position: absolute;
+      top: -10%;
+      background-image: url("../public/images/bg-quotes.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 25px;
+      height: 20px;
+      z-index: 2;
+      display: block;
+    }
+
+    & p {
+      font-size: 0.95rem;
+    }
+  }
+
+  #{&}__cols {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.testimonial__profile {
+  @include m.Profile;
+}
