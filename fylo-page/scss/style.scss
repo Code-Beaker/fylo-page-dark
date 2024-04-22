@@ -173,6 +173,10 @@ body {
     box-shadow: 5px 5px 6px m.color(dark-blue-footer);
   }
 
+  #{&}__heading {
+    margin-bottom: 1rem;
+  }
+
   #{&}__form {
     display: flex;
     flex-direction: column;
