@@ -185,7 +185,12 @@ body {
   #getStartedToday {
     padding: 1rem;
     border: none;
+    outline-offset: 3px;
     border-radius: 5rem;
+
+    &:focus {
+      outline: 3px dotted m.color(cyan-call-500);
+    }
   }
 
   .submit-btn {
@@ -193,7 +198,7 @@ body {
     border-radius: 5rem;
     border: none;
     display: block;
-    color: m.color(neutral-100);
+    // color: m.color(neutral-100);
     font-weight: m.weight(bold);
     background: linear-gradient(
       45deg,
@@ -201,5 +206,12 @@ body {
       m.color(cyan-call-600)
     );
     background-size: cover;
+    cursor: pointer;
+    outline-offset: 3px;
+    border-radius: 5rem;
+
+    &:focus {
+      outline: 3px dotted m.color(cyan-call-500);
+    }
   }
 }
