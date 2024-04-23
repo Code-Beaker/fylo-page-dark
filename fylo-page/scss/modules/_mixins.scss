@@ -48,3 +48,34 @@
     font-size: 0585rem;
   }
 }
+
+@mixin Footer {
+  background-color: v.color(dark-blue-footer);
+  padding: 6rem 1rem;
+  padding-top: 12rem;
+  color: v.color(neutral-100);
+  position: relative;
+
+  .footer__cols {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@mixin FooterNavLink {
+  text-decoration: none;
+  color: v.color(neutral-100);
+  padding: 0.15rem;
+  display: block;
+  outline-offset: 3px;
+  margin: 0.15rem 0;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:focus {
+    outline: 3px dotted v.color(neutral-100);
+  }
+}
