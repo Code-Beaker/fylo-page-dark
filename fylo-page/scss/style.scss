@@ -358,9 +358,13 @@ body {
 
   #{&}__para-cols {
     display: grid;
-    grid-template-columns: auto 1fr;
     margin: 1rem auto;
+    grid-template-columns: 1fr;
     gap: 2rem;
+
+    @media (width > 50rem) {
+      grid-template-columns: auto 1fr;
+    }
   }
 
   #{&}__para-wrapper {
